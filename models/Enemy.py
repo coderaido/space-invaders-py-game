@@ -1,5 +1,8 @@
 from dataclasses import dataclass
 
+import pygame.image
+from pygame.surface import SurfaceType, Surface
+
 
 @dataclass
 class Enemy:
@@ -7,4 +10,4 @@ class Enemy:
     name: str
     points: float
     velocity: float
-    
+    mesh:Surface | SurfaceType
